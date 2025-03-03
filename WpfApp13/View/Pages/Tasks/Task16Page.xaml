@@ -1,0 +1,79 @@
+﻿<Page x:Class="WpfApp13.View.Pages.Tasks.Task16Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp13.View.Pages.Tasks"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Task16Page">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Margin="0 10 0 0">
+            <TextBlock Text="Задание 16"
+                       FontSize="25"
+                       FontWeight="SemiBold"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Margin="0 0 0 200"
+                    Orientation="Horizontal">
+            <TextBlock Text="A: "
+                       FontSize="20"/>
+            <TextBox Width="80"
+                     x:Name="Tba"
+                     FontSize="20"/>
+
+            <TextBlock Text=" B: "
+                       FontSize="20"/>
+            <TextBox Width="80"
+                     x:Name="Tbb"
+                     FontSize="20"/>
+
+            <TextBlock Text=" N: "
+                       FontSize="20"/>
+            <TextBox Width="80"
+                     x:Name="TbN"
+                     FontSize="20"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+            <Button Content="Ответ"
+                    Width="110"
+                    FontSize="20"
+                    FontWeight="SemiBold"
+                    x:Name="BtnAns"
+                    Click="BtnAns_Click"
+                    Background="Transparent"
+                    BorderBrush="Black"
+                    BorderThickness="2"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Margin="0 200 0 0">
+            <TextBlock Text="Результат"
+                       x:Name="TbA"
+                       FontSize="20"
+                       FontWeight="SemiBold"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Margin="0 0 10 10">
+            <Button Content="Задание 17"
+                    Width="130"
+                    FontSize="20"
+                    FontWeight="SemiBold"
+                    x:Name="BtnNextTask"
+                    Click="BtnNextTask_Click"
+                    Background="Transparent"
+                    BorderBrush="Black"
+                    BorderThickness="2"/>
+        </StackPanel>
+    </Grid>
+</Page>
